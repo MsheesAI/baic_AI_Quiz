@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Quiz Start section -->
+    <div class="startScreen">
+        <h3>Mastery Challenge</h3>
+        <h1> Basic AI agents Quiz</h1>
+        <p class="subtitle">Test your fundamental knowledge of AI</p>
+        <button id="btn-action" class="btn" onclick="startQuiz()">Start Assessment</button>
+    </div>
+
+    <!-- Main Quiz section -->
+    <div class="main hidden" id="main">
+        
+    </div>
+
+    <!-- Result section -->
+    <div class="resultScreen hidden">
+        <h1>Analysis Complete</h1>
+        <div class="score-circle">
+            <span class="score-num">0</span>
+            <span id="point">POINTS</span>
+        </div>
+        <h2 class="score">You Scored 0 out of 0</h2>
+        <p class="subtitle">Great effort! Review your core concepts to reach a perfect score.</p>
+        <button id="btn-action" class="btn" onclick="restartQuiz()">Try Again</button>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
